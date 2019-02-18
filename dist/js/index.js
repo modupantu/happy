@@ -42,7 +42,7 @@ if(ismobile(1)==='1'){
 }else{
     function forceSafariPlayAudio() {
         audio.load(); // iOS 9   还需要额外的 load 一下, 否则直接 play 无效
-        audio.play(); // iOS 7/8 仅需要 play 一下
+       // audio.play(); // iOS 7/8 仅需要 play 一下
     }
     audio.addEventListener('play', function () {
         // 当 audio 能够播放后, 移除这个事件
